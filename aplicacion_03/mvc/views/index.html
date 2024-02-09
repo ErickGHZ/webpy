@@ -1,3 +1,5 @@
+$def with (datos)
+
 <!DOCTYPE html>
 <html lang="">
     <head>
@@ -5,10 +7,7 @@
     </head>
     <body>
         <h1>Index</h1>
-        $for i in range(6):
-            <p>Numero $i</p>
-
-        $ nombre = "Dejah"
-        <h2>Hola $nombre</h2>
+        $for i in datos:
+            <p>$i</p>
     </body>
 </html>
