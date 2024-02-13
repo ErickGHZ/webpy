@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="">
-    <head>
-        <title>Productos</title>
-    </head>
-    <body>
-        <h1>Productos</h1>
-        <p>Esta es una pagina de prueba</p>
-    </body>
-</html>
+$def with (datos)
+<h1>Productos</h1>
+<table>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+        </tr>
+        $for producto, precio, cantidad in datos:
+        <tr>
+            <td>$producto</td>
+            <td>$precio</td>
+            <td>$cantidad</td>
+        </tr>
+     
+</table>
+

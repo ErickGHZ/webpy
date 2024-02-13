@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="">
-    <head>
-        <title>Contactos</title>
-    </head>
-    <body>
-        <h1>Contactos</h1>
-        <p>Esta es una pagina de prueba</p>
-    </body>
-</html>
+$def with(datos)
+<h1>Contactos</h1>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Teléfono</th>
+    </tr>
+    $for nombre, apellido, telefono in datos:
+    <tr>
+        <td>$nombre</td>
+        <td>$apellido</td>
+        <td>$telefono</td>
+    </tr>
+
+</table>
+

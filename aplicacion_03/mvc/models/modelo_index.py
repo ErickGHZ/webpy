@@ -4,10 +4,10 @@ class ModeloIndex:
     def __init__(self):
         pass
 
-    def consultaProductos(self):
-        #conxion con BD
-        #ejecutar la consulta
-        #generar una lista con los datos
+    def consultaIndex(self):
+        # conxion con BD
+        # ejecutar la consulta
+        # generar una lista con los datos
         datos = [
             "Laptop HP",
             "Mouse Logitech",
