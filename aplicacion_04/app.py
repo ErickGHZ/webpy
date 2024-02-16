@@ -3,8 +3,7 @@ import web
 
 #  Rutas de los controladores
 urls = (
-    '/', 'mvc.controllers.index.Index',
-
+    '/', 'mvc.controllers.index.Index'
 )
 
 app = web.application(urls, globals())

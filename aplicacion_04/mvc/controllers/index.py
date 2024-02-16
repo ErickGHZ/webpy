@@ -8,11 +8,12 @@ class Index:
     def GET(self):
         try:
             # Al cargar la página, renderizas el formulario sin resultados
-            return render.index()
+            return render.index(datos=None, num1=None, num2=None)
         except Exception as e:
             print(f"Error 101 - index {e.args}")
             return "Ups algo salió mal con el GET"
 
+   # En el método POST del controlador Index
     def POST(self):
         try:
             # Obtienes los datos del formulario
@@ -28,3 +29,4 @@ class Index:
         except Exception as e:
             print(f"Error al procesar la solicitud: {e}")
             return "Ups, algo salió mal en el POST"
+
