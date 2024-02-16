@@ -1,6 +1,6 @@
 import web
 
-class ModeloIndex:
+class ModeloCalculadora:
     def __init__(self):
         pass
 
